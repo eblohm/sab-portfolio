@@ -80,7 +80,7 @@ exports.createPages = async ({ graphql, actions }) => {
   portfolios.forEach((portfolio, index) => {
     const previous =
       index === portfolios.length - 1 ? null : portfolios[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
+    const next = index === 0 ? null : portfolios[index - 1].node;
 
     console.log(portfolio.node.fields.slug);
 
