@@ -109,10 +109,9 @@ const styles = {
 };
 
 const Navbar = () => {
+  let width = 1000;
   if (typeof window !== `undefined`) {
-    let width = window.innerWidth;
-  } else {
-    let width = 1000;
+    width = window.innerWidth;
   }
 
   if (width < 600) {
