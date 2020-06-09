@@ -25,7 +25,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const { edges: portfolioItems } = portfolio;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO title='Home' />
       <Banner />
       <Grid />

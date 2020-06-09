@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 
 const portfolio = () => {
   return (
-    <Layout location={window.location} title='Portfolio'>
+    <Layout title='Portfolio'>
       <SEO title='Portfolio' />
       <h1>Hi I'm Sarah Barker and this is my portfolio</h1>
     </Layout>

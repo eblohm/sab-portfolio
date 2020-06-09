@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 
 const contact = () => {
   return (
-    <Layout location={window.location} title='Contact Me'>
+    <Layout title='Contact Me'>
       <SEO title='Contact Me' />
       <h1>Hi I'm Sarah</h1>
     </Layout>

@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 const PortfolioPostTemplate = ({ data, pageContext }) => {
   const siteTitle = data.site.siteMetadata.title;
   return (
-    <Layout location={window.location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <h1>Portfolios</h1>
       {JSON.stringify(data)}
     </Layout>
