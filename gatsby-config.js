@@ -1,22 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Sarah Ashley Barker's Portfolio`,
     author: {
-      name: `Kyle Mathews`,
+      name: `Sarah Barker`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://www.sarahashleybarker.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `heysarahashley`,
+      linkedin: `sarahashleybarker`,
     },
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/portfolio`,
+        name: `portfolio`,
       },
     },
     {
@@ -80,4 +81,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

@@ -1,70 +1,45 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { createGlobalStyle } from "styled-components";
 
-import { rhythm, scale } from "../utils/typography"
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
+
+import Scarlette from "../../static/Scarlette.woff2";
+import Brandon_reg from "../../static/Brandon_reg.woff2";
+import Brandon_bld from "../../static/Brandon_bld.woff2";
+
+const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'Scarlette';
+    src: url(${Scarlette}) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Brandon';
+    src: url(${Brandon_reg}) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'BrandonBold';
+    src: url(${Brandon_bld}) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+`;
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
-
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
-      <header>{header}</header>
+    <>
+      <GlobalStyles />
+      <Header />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </div>
-  )
-}
+      <Footer />
+    </>
+  );
+};
 
-export default Layout
+export default Layout;
