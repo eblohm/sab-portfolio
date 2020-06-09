@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "gatsby";
 import Img from "gatsby-image";
 import styled from "styled-components";
 import useHover from "../../hooks/useHover";
@@ -11,12 +12,14 @@ const PortfolioCardStyles = styled.div`
   }
 `;
 
-const PortfolioCard = ({ base, hover }) => {
+const PortfolioCard = ({ base, hover, url }) => {
   const [hoverRef, isHovered] = useHover();
 
   return (
     <PortfolioCardStyles className='portfolio-item' ref={hoverRef}>
-      {!isHovered ? <Img fluid={base} /> : <Img fluid={hover} />}
+      <Link to={url}>
+        {!isHovered ? <Img fluid={base} /> : <Img fluid={hover} />}
+      </Link>
     </PortfolioCardStyles>
   );
 };
