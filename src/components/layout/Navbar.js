@@ -112,7 +112,7 @@ const Navbar = () => {
   if (typeof window !== `undefined`) {
     let width = window.innerWidth;
   } else {
-    width = 1000;
+    let width = 1000;
   }
 
   if (width < 600) {
