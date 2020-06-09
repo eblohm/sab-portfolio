@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ title, children }) => {
   return (
     <>
       <GlobalStyles />
