@@ -1,17 +1,17 @@
-import React from "react";
-import { createGlobalStyle } from "styled-components";
+import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 
-import Header from "./layout/Header";
-import Footer from "./layout/Footer";
+import Header from './layout/Header';
+import Footer from './layout/Footer';
 
-import Scarlette from "../../static/Scarlette.woff2";
-import Brandon_reg from "../../static/Brandon_reg.woff2";
-import Brandon_bld from "../../static/Brandon_bld.woff2";
+import TheSpirit from '../../static/The-Spirit.woff2';
+import Brandon_reg from '../../static/Brandon_reg.woff2';
+import Brandon_bld from '../../static/Brandon_bld.woff2';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: 'Scarlette';
-    src: url(${Scarlette}) format('woff2');
+    font-family: 'The Spirit';
+    src: url(${TheSpirit}) format('woff2');
     font-weight: 400;
     font-style: normal;
   }
