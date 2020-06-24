@@ -37,7 +37,12 @@ const contact = () => {
       <TopSpace />
       <PageContainer>
         <h1>Let's Talk</h1>
-        <form name='contact' method='POST' data-netlify='true'>
+        <form
+          name='Contact Form'
+          method='POST'
+          data-netlify='true'
+          action='/thankyou'
+        >
           <p>
             <label>
               <input type='text' name='name' placeholder='Name' />
