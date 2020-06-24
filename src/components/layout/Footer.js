@@ -67,7 +67,6 @@ const Footer = () => {
       <div className='footer--left'>
         <FooterHeading>contact me</FooterHeading>
         <div className='contact-info'>
-          <a href='tel:+15865567693'>586.556.7693</a>
           <a href='mailto:barkers6@live.com'>barkers6@live.com</a>
         </div>
       </div>
