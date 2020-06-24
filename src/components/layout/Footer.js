@@ -78,11 +78,11 @@ const Footer = () => {
           <a href='https://www.instagram.com/princess.ashtreemeadow/'>
             <FaInstagram />
           </a>
-          <a href='https://twitter.com/heysarahashley'>
-            <FaTwitter />
-          </a>
           <a href='https://www.linkedin.com/in/barkers6'>
             <FaLinkedin />
+          </a>
+          <a href='https://twitter.com/heysarahashley'>
+            <FaTwitter />
           </a>
         </div>
         <div className='footer--right__bottom'>
