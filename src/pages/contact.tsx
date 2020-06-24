@@ -4,7 +4,6 @@ import { navigate } from 'gatsby-link';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { TopSpace } from '../components/StyledComponents';
-import { encode } from 'punycode';
 
 const PageContainer = styled.main`
   border-radius: 30px;
