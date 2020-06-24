@@ -96,7 +96,7 @@ const AboutStyles = styled.section`
 
 const About = ({ title, children }) => {
   return (
-    <AboutStyles>
+    <AboutStyles id='about'>
       <div className='left-half'>
         <SectionHeading>{title}</SectionHeading>
         <p>{children}</p>

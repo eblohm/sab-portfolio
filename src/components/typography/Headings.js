@@ -72,7 +72,7 @@ const FooterHeadingStyles = styled(BaseStyles)`
 const SectionHeading = ({ children }) => {
   return (
     <SectionHeadingStyles>
-      <img src={headingDots} />
+      <img src={headingDots} alt='decorative dots' />
       <h2>{children}</h2>
     </SectionHeadingStyles>
   );
@@ -81,7 +81,7 @@ const SectionHeading = ({ children }) => {
 const FooterHeading = ({ children }) => {
   return (
     <FooterHeadingStyles>
-      <img src={headingDots} />
+      <img src={headingDots} alt='decorative dots' />
       <h3>{children}</h3>
     </FooterHeadingStyles>
   );

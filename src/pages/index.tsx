@@ -5,7 +5,7 @@ import { PageProps, Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Banner from '../components/Banner';
-import Portfolio from '../components/Portfolio';
+import Portfolio from '../components/portfolio/Portfolio';
 import About from '../components/About';
 
 import { usePortfolioData } from '../hooks/usePortfolioData';

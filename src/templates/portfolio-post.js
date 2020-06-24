@@ -1,15 +1,21 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../components/layout";
+import Layout from '../components/layout';
 //import SEO from "../components/seo";
+import { Container, TopSpace } from '../components/StyledComponents';
 
 const PortfolioPostTemplate = ({ data, pageContext }) => {
   const siteTitle = data.site.siteMetadata.title;
   return (
     <Layout title={siteTitle}>
-      <h1>Portfolios</h1>
-      {JSON.stringify(data)}
+      <TopSpace />
+      <Container>
+        <h1>{data.markdownRemark.frontmatter.title}</h1>
+        <article
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
+      </Container>
     </Layout>
   );
 };

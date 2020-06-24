@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { usePortfolioData } from '../hooks/usePortfolioData';
-import PortfolioCard from './portfolio/PortfolioCard';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
+import PortfolioCard from './PortfolioCard';
 
 const GridStyles = styled.section`
   display: grid;
@@ -31,6 +31,7 @@ const Grid = () => {
         <PortfolioCard
           key={portfolioItem.node.fields.slug}
           url={portfolioItem.node.fields.slug}
+          behance={portfolioItem.node.frontmatter.behance}
           hover={portfolioItem.node.frontmatter.mainImage.childImageSharp.fluid}
           base={portfolioItem.node.frontmatter.hoverImage.childImageSharp.fluid}
         />
