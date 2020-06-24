@@ -5,8 +5,8 @@ import { PageProps, Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Banner from '../components/Banner';
-import Grid from '../components/Grid';
-import SectionContainer from '../components/SectionContainer';
+import Portfolio from '../components/Portfolio';
+import About from '../components/About';
 
 import { usePortfolioData } from '../hooks/usePortfolioData';
 
@@ -29,7 +29,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout title={siteTitle}>
       <SEO title='Home' />
       <Banner />
-      <SectionContainer title='about me'>
+      <About title='about me'>
         Hi! Most people call me Sarah. I'm a designer/advertising professional
         in the Metro-Detroit area and bunny mom of three (Bridget, Toast and
         Hazel). Upon graduating from Michigan State University (Go Green!) - I
@@ -44,8 +44,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
         worked in the studio and got to work on all things Chevy. Now I am
         searching for my next big careern opportunity post-pandemic. I look
         forward to figuring out what that is. Thanks for visiting.
-      </SectionContainer>
-      <Grid />
+      </About>
+      <Portfolio />
     </Layout>
   );
 };

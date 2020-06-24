@@ -1,14 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from "gatsby";
-import Img from "gatsby-image";
-import styled from "styled-components";
-import useHover from "../../hooks/useHover";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
+import styled from 'styled-components';
+import useHover from '../../hooks/useHover';
 
 const PortfolioCardStyles = styled.div`
   img {
-    height: auto !important;
-    width: 450px !important;
+    width: 363px !important;
   }
 `;
 
@@ -18,7 +17,14 @@ const PortfolioCard = ({ base, hover, url }) => {
   return (
     <PortfolioCardStyles className='portfolio-item' ref={hoverRef}>
       <Link to={url}>
-        {!isHovered ? <Img fluid={base} /> : <Img fluid={hover} />}
+        <Img
+          fluid={base}
+          style={!isHovered ? { display: 'none' } : { display: 'block' }}
+        />
+        <Img
+          fluid={hover}
+          style={!isHovered ? { display: 'block' } : { display: 'none' }}
+        />
       </Link>
     </PortfolioCardStyles>
   );

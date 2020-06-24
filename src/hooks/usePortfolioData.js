@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from 'gatsby';
 
 export const usePortfolioData = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -15,14 +15,14 @@ export const usePortfolioData = () => {
             frontmatter {
               mainImage {
                 childImageSharp {
-                  fluid(maxWidth: 500) {
+                  fluid(maxWidth: 360) {
                     ...GatsbyImageSharpFluid
                   }
                 }
               }
               hoverImage {
                 childImageSharp {
-                  fluid(maxWidth: 500) {
+                  fluid(maxWidth: 360) {
                     ...GatsbyImageSharpFluid
                   }
                 }

@@ -1,9 +1,9 @@
 ---
 title: Diversified Members Credit Union
-description: "Work during my time at Diversified Members Credit Union"
+description: 'Work during my time at Diversified Members Credit Union'
 mainImage: dmcu-base.png
 hoverImage: dmcu-hover.png
-order: 5
+order: 8
 type: portfolio
 ---
 

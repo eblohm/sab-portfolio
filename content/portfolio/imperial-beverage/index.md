@@ -1,9 +1,9 @@
 ---
 title: Imperial Beverage
-description: "Work during my time at Imperial Beverage"
+description: 'Work during my time at Imperial Beverage'
 mainImage: imperial-base.png
 hoverImage: imperial-hover.png
-order: 4
+order: 6
 type: portfolio
 ---
 

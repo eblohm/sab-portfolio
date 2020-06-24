@@ -1,9 +1,9 @@
 ---
 title: Amerisure
-description: "Work during my time at Amerisure"
+description: 'Work during my time at Amerisure'
 mainImage: amerisure-base.png
 hoverImage: amerisure-hover.png
-order: 2
+order: 5
 type: portfolio
 ---
 

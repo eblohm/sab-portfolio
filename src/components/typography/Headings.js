@@ -2,17 +2,70 @@ import React from 'react';
 import styled from 'styled-components';
 import headingDots from '../../assets/heading-dots.png';
 
-const SectionHeadingStyles = styled.div`
+const BaseStyles = styled.div`
   display: inline-block;
   position: relative;
 
-  h2 {
+  img {
+    height: auto;
+    margin-bottom: 0;
+    width: 175px;
+
+    @media screen and (min-width: 1200px) {
+      width: auto;
+    }
+  }
+
+  h2,
+  h3 {
     bottom: 0;
-    color: #590f1a;
-    font-family: 'The Spirit', sans-serif;
-    font-size: 3.5rem;
+    font-family: 'The Spirit';
+    margin: 0;
     position: absolute;
-    right: -130px;
+  }
+`;
+
+const SectionHeadingStyles = styled(BaseStyles)`
+  display: inline-block;
+  position: relative;
+
+  img {
+    width: 175px;
+  }
+
+  h2 {
+    color: #590f1a;
+    font-size: 3rem;
+    right: -110px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 3.5rem;
+      right: -130px;
+    }
+  }
+`;
+
+const FooterHeadingStyles = styled(BaseStyles)`
+  img {
+    display: none;
+
+    @media screen and (min-width: 500px) {
+      display: block;
+      width: 125px;
+    }
+  }
+
+  h3 {
+    color: white;
+    font-size: 1.75rem;
+    position: relative;
+
+    @media screen and (min-width: 500px) {
+      bottom: 5px;
+      font-size: 2rem;
+      position: absolute;
+      right: -90px;
+    }
   }
 `;
 
@@ -25,4 +78,13 @@ const SectionHeading = ({ children }) => {
   );
 };
 
-export { SectionHeading };
+const FooterHeading = ({ children }) => {
+  return (
+    <FooterHeadingStyles>
+      <img src={headingDots} />
+      <h3>{children}</h3>
+    </FooterHeadingStyles>
+  );
+};
+
+export { SectionHeading, FooterHeading };

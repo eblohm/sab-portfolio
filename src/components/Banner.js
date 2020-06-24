@@ -17,7 +17,6 @@ const BannerStyles = styled.div`
   background-position: 70% 50%;
   background-size: cover;
   height: 60vh;
-  margin-bottom: 5rem;
   overflow: hidden;
   position: relative;
 

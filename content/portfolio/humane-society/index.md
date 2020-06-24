@@ -1,9 +1,9 @@
 ---
 title: Humane Society
-description: "Work during my time at Humane Society"
+description: 'Work during my time at Humane Society'
 mainImage: humane-base.png
 hoverImage: humane-hover.png
-order: 8
+order: 10
 type: portfolio
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: The Friendly Fork
-description: "Work during my time at The Friendly Fork"
+description: 'Work during my time at The Friendly Fork'
 mainImage: friendly-base.png
 hoverImage: friendly-hover.png
-order: 3
+order: 11
 type: portfolio
 ---
 

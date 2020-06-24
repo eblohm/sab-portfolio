@@ -137,7 +137,7 @@ const Navbar = () => {
       <div className='right--nav'>
         {width < 600 ? (
           <Menu styles={styles} right>
-            <Link to={`/`}>Home</Link>
+            {/* <Link to={`/`}>Home</Link> */}
             <Link to={`/about`}>About</Link>
             <Link to={`/portfolio`}>Portfolio</Link>
             <a href='/resume.pdf'>Resume</a>
@@ -145,7 +145,7 @@ const Navbar = () => {
           </Menu>
         ) : (
           <>
-            <Link to={`/`}>Home</Link>
+            {/* <Link to={`/`}>Home</Link> */}
             <Link to={`/about`}>About</Link>
             <Link to={`/portfolio`}>Portfolio</Link>
             <a href='/resume.pdf'>Resume</a>

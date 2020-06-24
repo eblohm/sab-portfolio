@@ -1,9 +1,9 @@
 ---
 title: Chevrolet
-description: "Work during my time at Chevrolet"
+description: 'Work during my time at Chevrolet'
 mainImage: chevrolet-base.png
 hoverImage: chevrolet-hover.png
-order: 1
+order: 3
 type: portfolio
 ---
 

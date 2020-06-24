@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { usePortfolioData } from "../hooks/usePortfolioData";
-import PortfolioCard from "./portfolio/PortfolioCard";
+import { usePortfolioData } from '../hooks/usePortfolioData';
+import PortfolioCard from './portfolio/PortfolioCard';
 
 const GridStyles = styled.section`
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
-  margin: 0 auto;
+  margin: 2rem auto 0;
   width: 75%;
 
   @media screen and (min-width: 600px) {
