@@ -14,8 +14,6 @@ const PortfolioCardStyles = styled.div`
 const PortfolioCard = ({ base, hover, url, behance }) => {
   const [hoverRef, isHovered] = useHover();
 
-  console.log(behance);
-
   return (
     <PortfolioCardStyles className='portfolio-item' ref={hoverRef}>
       <a href={behance}>
