@@ -6,6 +6,7 @@ hoverImage: metro-hover.png
 order: 7
 behance: https://www.behance.net/gallery/57200047/MNFCU
 type: portfolio
+hasPage: 'no'
 ---
 
 This is just the main content
