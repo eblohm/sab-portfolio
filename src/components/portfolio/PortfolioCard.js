@@ -20,10 +20,14 @@ const PortfolioCard = ({ base, hover, url, behance }) => {
         <Img
           fluid={base}
           style={!isHovered ? { display: 'none' } : { display: 'block' }}
+          fadeIn='false'
+          durationFadeIn='0'
         />
         <Img
           fluid={hover}
           style={!isHovered ? { display: 'block' } : { display: 'none' }}
+          fadeIn='false'
+          durationFadeIn='0'
         />
       </a>
     </PortfolioCardStyles>
