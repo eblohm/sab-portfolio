@@ -29,6 +29,10 @@ const BannerStyles = styled.div`
     height: 100%;
     width: 50%;
 
+    @media screen and (max-height: 500px) {
+      display: none !important;
+    }
+
     @media screen and (min-width: 1024px) {
       display: block;
     }
