@@ -57,16 +57,7 @@ const TextCircle = styled.div`
     position: absolute;
     top: 50%;
     transform: translate(-15%, -40%);
-    width: 570px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding: 4rem;
-    width: 640px;
-  }
-
-  @media screen and (min-width: 1350px) {
-    left: 15%;
+    width: 550px;
   }
 
   p {
