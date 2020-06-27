@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import { slide as Menu } from 'react-burger-menu';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import { slide as Menu } from "react-burger-menu";
 
-import logo from '../../assets/logo.png';
+import logo from "../../assets/logo.png";
 
 const NavStyles = styled.nav`
   display: flex;
@@ -50,11 +50,11 @@ const NavStyles = styled.nav`
     a {
       box-shadow: none;
       color: #000000;
-      font-family: 'BrandonBold';
+      font-family: "BrandonBold";
       text-decoration: none;
       text-transform: uppercase;
 
-      &[aria-current='page'],
+      &[aria-current="page"],
       &:hover {
         color: #590f1a;
       }
@@ -76,49 +76,50 @@ const NavStyles = styled.nav`
 
 const styles = {
   bmBurgerButton: {
-    position: 'fixed',
-    width: '36px',
-    height: '30px',
-    right: '2.5%',
-    top: '1rem',
+    position: "fixed",
+    width: "36px",
+    height: "30px",
+    right: "2.5%",
+    top: "1rem"
   },
   bmBurgerBars: {
-    background: '#373a47',
+    background: "#373a47"
   },
   bmBurgerBarsHover: {
-    background: '#a90000',
+    background: "#a90000"
   },
   bmCrossButton: {
-    height: '24px',
-    width: '24px',
+    height: "24px",
+    width: "24px"
   },
   bmCross: {
-    background: '#bdc3c7',
+    background: "#bdc3c7"
   },
   bmMenuWrap: {
-    position: 'fixed',
-    height: '100%',
-    top: '0',
-    width: '200px',
+    position: "fixed",
+    height: "100%",
+    top: "0",
+    width: "200px"
   },
   bmMenu: {
-    background: 'rgba(55, 58, 71, 0.95)',
-    padding: '2.5em 1.5em 0',
-    fontSize: '1.15em',
+    background: "rgba(55, 58, 71, 0.95)",
+    padding: "2.5em 1.5em 0",
+    fontSize: "1.15em"
   },
   bmMorphShape: {
-    fill: '#373a47',
+    fill: "#373a47"
   },
   bmItemList: {
-    color: '#b8b7ad',
-    padding: '0.8em',
+    color: "#b8b7ad",
+    padding: "0.8em"
   },
   bmItem: {
-    display: 'inline-block',
+    color: "white",
+    display: "inline-block"
   },
   bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)',
-  },
+    background: "rgba(0, 0, 0, 0.3)"
+  }
 };
 
 const Navbar = () => {
@@ -129,18 +130,18 @@ const Navbar = () => {
 
   return (
     <NavStyles>
-      <div className='left--nav'>
+      <div className="left--nav">
         <Link to={`/`}>
-          <img src={logo} alt='Sarah Ashley Barker' />
+          <img src={logo} alt="Sarah Ashley Barker" />
         </Link>
       </div>
-      <div className='right--nav'>
+      <div className="right--nav">
         {width < 600 ? (
           <Menu styles={styles} right>
             {/* <Link to={`/`}>Home</Link> */}
             <Link to={`/#about`}>About</Link>
             <Link to={`/portfolio`}>Portfolio</Link>
-            <a href='/resume.pdf'>Resume</a>
+            <a href="/resume.pdf">Resume</a>
             <Link to={`/contact`}>Contact</Link>
           </Menu>
         ) : (
@@ -148,7 +149,7 @@ const Navbar = () => {
             {/* <Link to={`/`}>Home</Link> */}
             <Link to={`/#about`}>About</Link>
             <Link to={`/portfolio`}>Portfolio</Link>
-            <a href='/resume.pdf'>Resume</a>
+            <a href="/resume.pdf">Resume</a>
             <Link to={`/contact`}>Contact</Link>
           </>
         )}
