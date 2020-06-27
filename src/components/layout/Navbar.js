@@ -7,8 +7,13 @@ import logo from "../../assets/logo.png";
 
 const NavStyles = styled.nav`
   display: flex;
+  height: 75px;
   justify-content: space-between;
   padding: 0.75rem 0;
+
+  @media screen and (min-width: 700px) {
+    height: auto;
+  }
 
   .left--nav {
     margin-left: 2.5%;
@@ -23,6 +28,11 @@ const NavStyles = styled.nav`
 
       img {
         margin-bottom: 0;
+        height: 50px;
+
+        @media screen and (min-width: 700px) {
+          height: auto;
+        }
       }
     }
   }
