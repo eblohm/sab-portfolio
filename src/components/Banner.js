@@ -16,17 +16,9 @@ const BannerStyles = styled.div`
   background-image: url(${banner});
   background-position: 70% 50%;
   background-size: cover;
-  height: 60vh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
-
-  @media screen and (min-width: 600px) {
-    height: 80vh;
-  }
-
-  @media screen and (max-height: 570px) {
-    height: 90vh !important;
-  }
 
   @media screen and (min-width: 800px) {
     background-position: center;
@@ -125,10 +117,6 @@ const TextCircle = styled.div`
 
     @media screen and (min-width: 800px) {
       width: 100px;
-    }
-
-    @media screen and (min-width: 1024px) {
-      width: auto;
     }
   }
 `;

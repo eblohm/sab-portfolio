@@ -12,7 +12,7 @@ const NavStyles = styled.nav`
   padding: 0.75rem 0;
 
   @media screen and (min-width: 700px) {
-    height: auto;
+    height: 85px;
   }
 
   .left--nav {
@@ -31,7 +31,7 @@ const NavStyles = styled.nav`
         height: 50px;
 
         @media screen and (min-width: 700px) {
-          height: auto;
+          height: 60px;
         }
       }
     }

@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import headingDots from '../../assets/heading-dots.png';
+import React from "react";
+import styled from "styled-components";
+import headingDots from "../../assets/heading-dots.png";
 
 const BaseStyles = styled.div`
   display: inline-block;
@@ -19,7 +19,7 @@ const BaseStyles = styled.div`
   h2,
   h3 {
     bottom: 0;
-    font-family: 'The Spirit';
+    font-family: "The Spirit";
     margin: 0;
     position: absolute;
   }
@@ -61,7 +61,7 @@ const FooterHeadingStyles = styled(BaseStyles)`
     position: relative;
 
     @media screen and (min-width: 500px) {
-      bottom: 5px;
+      bottom: -2px;
       font-size: 2rem;
       position: absolute;
       right: -90px;
@@ -72,7 +72,7 @@ const FooterHeadingStyles = styled(BaseStyles)`
 const SectionHeading = ({ children }) => {
   return (
     <SectionHeadingStyles>
-      <img src={headingDots} alt='decorative dots' />
+      <img src={headingDots} alt="decorative dots" />
       <h2>{children}</h2>
     </SectionHeadingStyles>
   );
@@ -81,7 +81,7 @@ const SectionHeading = ({ children }) => {
 const FooterHeading = ({ children }) => {
   return (
     <FooterHeadingStyles>
-      <img src={headingDots} alt='decorative dots' />
+      <img src={headingDots} alt="decorative dots" />
       <h3>{children}</h3>
     </FooterHeadingStyles>
   );
