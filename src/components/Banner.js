@@ -52,7 +52,7 @@ const TextCircle = styled.div`
   @media screen and (min-width: 800px) {
     border-radius: 50%;
     height: 300px;
-    left: 12.15%;
+    left: 11.3%;
     padding: 3rem;
     position: absolute;
     top: 50%;
