@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { SectionHeading } from './typography/Headings';
+import React from "react";
+import styled from "styled-components";
+import { SectionHeading } from "./typography/Headings";
 
-import bridget from '../assets/bridget.png';
-import toast from '../assets/toast.png';
-import hazel from '../assets/hazel.png';
-import thingrid from '../assets/thingrid.png';
+import bridget from "../assets/bridget.png";
+import toast from "../assets/toast.png";
+import hazel from "../assets/hazel.png";
+import thingrid from "../assets/thingrid.png";
 
 const AboutStyles = styled.section`
   display: flex;
@@ -25,7 +25,7 @@ const AboutStyles = styled.section`
   .left-half {
     align-items: flex-start;
     display: flex;
-    font-family: 'Brandon', sans-serif;
+    font-family: "Brandon", sans-serif;
     flex-basis: 100%;
     flex-direction: column;
     justify-content: center;
@@ -55,6 +55,16 @@ const AboutStyles = styled.section`
     overflow: hidden;
     position: relative;
     width: 100%;
+
+    img {
+      max-width: 33%;
+    }
+
+    @media screen and (min-width: 750px) {
+      img {
+        max-width: 100%;
+      }
+    }
 
     @media screen and (min-width: 1000px) {
       align-items: flex-start;
@@ -96,16 +106,16 @@ const AboutStyles = styled.section`
 
 const About = ({ title, children }) => {
   return (
-    <AboutStyles id='about'>
-      <div className='left-half'>
+    <AboutStyles id="about">
+      <div className="left-half">
         <SectionHeading>{title}</SectionHeading>
         <p>{children}</p>
       </div>
-      <div className='right-half'>
-        <img src={thingrid} alt='Background Dots' className='dots' />
-        <img src={bridget} alt='Bridget' className='bunny' />
-        <img src={toast} alt='Toast' className='bunny toast' />
-        <img src={hazel} alt='Hazel' className='bunny' />
+      <div className="right-half">
+        <img src={thingrid} alt="Background Dots" className="dots" />
+        <img src={bridget} alt="Bridget" className="bunny" />
+        <img src={toast} alt="Toast" className="bunny toast" />
+        <img src={hazel} alt="Hazel" className="bunny" />
       </div>
     </AboutStyles>
   );
