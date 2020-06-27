@@ -38,12 +38,10 @@ const AboutStyles = styled.section`
     }
 
     p {
-      @media screen and (min-width: 1000px) {
-        margin-left: 108px;
-      }
+      margin-top: 1.5rem;
 
-      @media screen and (min-width: 1200px) {
-        margin-left: 125px;
+      @media screen and (min-width: 1000px) {
+        margin-left: 110px;
       }
     }
   }

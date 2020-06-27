@@ -36,12 +36,7 @@ const SectionHeadingStyles = styled(BaseStyles)`
   h2 {
     color: #590f1a;
     font-size: 3rem;
-    right: -110px;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 3.5rem;
-      right: -130px;
-    }
+    right: -105px;
   }
 `;
 
