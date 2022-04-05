@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-//import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import useHover from '../../hooks/useHover';
 
@@ -9,25 +8,26 @@ const PortfolioCardStyles = styled.div`
   img {
     width: 363px !important;
   }
+
+  .gatsby-image-wrapper [data-placeholder-image] {
+    border-radius: 45px !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
 `;
 
-const PortfolioCard = ({ base, hover, url, behance }) => {
+const PortfolioCard = ({ base, hover, url, behance, title }) => {
   const [hoverRef, isHovered] = useHover();
+
+  const baseImage = getImage(base);
+  const hoverImage = getImage(hover);
 
   return (
     <PortfolioCardStyles className='portfolio-item' ref={hoverRef}>
       <a href={behance}>
-        <Img
-          fluid={base}
-          style={!isHovered ? { display: 'none' } : { display: 'block' }}
-          fadeIn='false'
-          durationFadeIn='0'
-        />
-        <Img
-          fluid={hover}
-          style={!isHovered ? { display: 'block' } : { display: 'none' }}
-          fadeIn='false'
-          durationFadeIn='0'
+        <GatsbyImage
+          image={isHovered ? baseImage : hoverImage}
+          alt={title}
         />
       </a>
     </PortfolioCardStyles>

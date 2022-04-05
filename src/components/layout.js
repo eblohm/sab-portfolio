@@ -29,6 +29,10 @@ const GlobalStyles = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
   }
+
+  body {
+    margin: 0;
+  }
 `;
 
 const Layout = ({ title, children }) => {

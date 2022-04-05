@@ -13,18 +13,15 @@ export const usePortfolioData = () => {
               slug
             }
             frontmatter {
+              title
               mainImage {
                 childImageSharp {
-                  fluid(maxWidth: 360) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData
                 }
               }
               hoverImage {
                 childImageSharp {
-                  fluid(maxWidth: 360) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData
                 }
               }
               behance
