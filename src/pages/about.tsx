@@ -6,7 +6,6 @@ const about = () => {
   return (
     <Layout title='About Me'>
       <SEO title='About Me' />
-      <h1>Hi I'm Sarah Barker..for now</h1>
     </Layout>
   );
 };

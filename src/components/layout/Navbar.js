@@ -142,7 +142,7 @@ const Navbar = () => {
     <NavStyles>
       <div className="left--nav">
         <Link to={`/`}>
-          <img src={logo} alt="Sarah Ashley Barker" />
+          <img src={logo} alt="Sarah Ashley Blohm" />
         </Link>
       </div>
       <div className="right--nav">

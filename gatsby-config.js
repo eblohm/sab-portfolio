@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Sarah Ashley Barker's Portfolio`,
+    title: `Sarah Ashley Blohm's Portfolio`,
     author: {
-      name: `Sarah Barker`,
+      name: `Sarah Blohm`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://www.sarahashleybarker.com/`,
+    siteUrl: `https://www.sarahblohm.com/`,
     social: {
       twitter: `heysarahashley`,
       linkedin: `sarahashleybarker`,
