@@ -124,7 +124,7 @@ const Banner = () => {
         <img src={quote} alt="quote" className="quote-icon" />
         <TheSpiritFont>hello. I'm sarah.</TheSpiritFont>
         <BrandonFont>
-          Graphic designer and typography enthusiast from the Metro-Detroit
+          Graphic designer from the Metro-Detroit
           area.
         </BrandonFont>
       </TextCircle>

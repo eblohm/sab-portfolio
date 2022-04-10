@@ -67,7 +67,7 @@ const Footer = () => {
       <div className='footer--left'>
         <FooterHeading>contact me</FooterHeading>
         <div className='contact-info'>
-          <a href='mailto:barkers6@live.com'>barkers6@live.com</a>
+          <a href='mailto:sarah.blohm@outlook.com'>sarah.blohm@outlook.com</a>
         </div>
       </div>
       <div className='footer--right'>
@@ -75,10 +75,10 @@ const Footer = () => {
           <a href='https://www.behance.net/barkers6'>
             <FaBehance />
           </a>
-          <a href='https://www.instagram.com/princess.ashtreemeadow/'>
+          <a href='https://www.instagram.com/sarah.blohm/'>
             <FaInstagram />
           </a>
-          <a href='https://www.linkedin.com/in/barkers6'>
+          <a href='https://www.linkedin.com/in/sarahblohm'>
             <FaLinkedin />
           </a>
           <a href='https://twitter.com/heysarahashley'>
@@ -86,7 +86,7 @@ const Footer = () => {
           </a>
         </div>
         <div className='footer--right__bottom'>
-          <p>&copy; 2020 Sarah Blohm</p>
+          <p>&copy; 2022 Sarah Blohm</p>
         </div>
       </div>
     </FooterStyles>

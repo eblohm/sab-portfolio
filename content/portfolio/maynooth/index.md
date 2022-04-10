@@ -3,7 +3,7 @@ title: Maynooth Furniture
 description: 'Maynooth Furniture Website Design'
 mainImage: maynooth-base.png
 hoverImage: maynooth-hover.png
-order: 2
+order: 3
 behance: https://www.behance.net/gallery/96524803/Maynooth-Furniture
 type: portfolio
 ---

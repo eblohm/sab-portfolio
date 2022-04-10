@@ -6,6 +6,7 @@ import useHover from '../../hooks/useHover';
 
 const PortfolioCardStyles = styled.div`
   img {
+    max-width: 100%;
     width: 363px !important;
   }
 
@@ -24,7 +25,7 @@ const PortfolioCard = ({ base, hover, url, behance, title }) => {
 
   return (
     <PortfolioCardStyles className='portfolio-item' ref={hoverRef}>
-      <a href={behance}>
+      <a href={behance} target="_blank">
         <GatsbyImage
           image={isHovered ? baseImage : hoverImage}
           alt={title}
