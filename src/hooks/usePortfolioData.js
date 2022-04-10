@@ -16,12 +16,16 @@ export const usePortfolioData = () => {
               title
               mainImage {
                 childImageSharp {
-                  gatsbyImageData
+                  fluid(maxWidth: 360) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
               hoverImage {
                 childImageSharp {
-                  gatsbyImageData
+                  fluid(maxWidth: 360) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
               behance

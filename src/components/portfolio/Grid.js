@@ -32,8 +32,8 @@ const Grid = () => {
           key={portfolioItem.node.fields.slug}
           url={portfolioItem.node.fields.slug}
           behance={portfolioItem.node.frontmatter.behance}
-          hover={portfolioItem.node.frontmatter.mainImage}
-          base={portfolioItem.node.frontmatter.hoverImage}
+          hover={portfolioItem.node.frontmatter.mainImage.childImageSharp.fluid}
+          base={portfolioItem.node.frontmatter.hoverImage.childImageSharp.fluid}
           title={portfolioItem.node.frontmatter.title}
         />
       ))}

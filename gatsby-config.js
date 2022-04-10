@@ -3,13 +3,13 @@ module.exports = {
     title: `Sarah Ashley Blohm's Portfolio`,
     author: {
       name: `Sarah Blohm`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `Graphic designer from the Metro-Detroit area.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Sarah Blohm's Portfolio`,
     siteUrl: `https://www.sarahblohm.com/`,
     social: {
       twitter: `heysarahashley`,
-      linkedin: `sarahashleybarker`,
+      linkedin: `sarahblohm`,
     },
   },
   plugins: [
@@ -50,14 +50,13 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Sarah Blohm's Portfolio`,
+        short_name: `Sarah's Portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -66,14 +65,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };
