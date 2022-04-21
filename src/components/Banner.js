@@ -55,7 +55,7 @@ const TextCircle = styled.div`
 
   @media screen and (min-width: 800px) {
     border-radius: 50%;
-    height: 300px;
+    height: 250px;
     left: 11.3%;
     padding: 3rem;
     position: absolute;
@@ -124,8 +124,7 @@ const Banner = () => {
         <img src={quote} alt="quote" className="quote-icon" />
         <TheSpiritFont>hello. I'm sarah.</TheSpiritFont>
         <BrandonFont>
-          Graphic designer from the Metro-Detroit
-          area.
+          My name is Sarah Blohm and I'm a Graphic Designer<br/>from the Metro Detroit area.
         </BrandonFont>
       </TextCircle>
     </BannerStyles>
