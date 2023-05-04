@@ -14,6 +14,14 @@ const PortfolioCardStyles = styled.div`
     opacity: 1 !important;
     transition: none !important;
   }
+
+  .gatsby-image-wrapper {
+    picture {
+      img {
+        border-radius: 50px !important;
+      }
+    }
+  }
 `;
 
 const PortfolioCard = ({ base, hover, url, behance, title }) => {

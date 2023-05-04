@@ -1,6 +1,6 @@
 ---
 title: DealerOn
-description: 'Work I've made at DealerOn'
+description: "Work I've made at DealerOn"
 mainImage: dealeron-base.png
 hoverImage: dealeron-hover.png
 order: 1
