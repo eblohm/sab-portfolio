@@ -86,7 +86,7 @@ const Footer = () => {
           </a>
         </div>
         <div className='footer--right__bottom'>
-          <p>&copy; 2022 Sarah Blohm</p>
+          <p>&copy; 2024 Sarah Blohm</p>
         </div>
       </div>
     </FooterStyles>

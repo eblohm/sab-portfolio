@@ -11,15 +11,15 @@ const AboutStyles = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 2rem 2.5% 0;
+  margin: 0 2.5% 0;
 
   @media screen and (min-width: 700px) {
-    margin: 2rem 5% 0;
+    margin: 0 5% 0;
   }
 
   @media screen and (min-width: 1000px) {
     flex-wrap: nowrap;
-    margin: 2rem 0 0 5%;
+    margin: 0 0 0 5%;
   }
 
   .left-half {

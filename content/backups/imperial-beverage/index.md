@@ -5,7 +5,7 @@ mainImage: imperial-base.png
 hoverImage: imperial-hover.png
 order: 7
 behance: https://www.behance.net/gallery/57200173/Imperial-Beverage
-type: portfolio
+type: portfolio-backup
 ---
 
 This is just the main content

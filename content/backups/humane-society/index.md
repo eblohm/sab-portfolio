@@ -5,7 +5,7 @@ mainImage: humane-base.png
 hoverImage: humane-hover.png
 order: 9
 behance: https://www.behance.net/gallery/57199831/Humane-Society-of-Macomb
-type: portfolio
+type: portfolio-backup
 ---
 
 This is just the main content
